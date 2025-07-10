@@ -1,0 +1,39 @@
+﻿.logo a img {
+    width: 40%;
+}
+
+.banner {
+    width: 100%;
+    background-color: black;
+}
+
+    .banner h1 {
+        background-color: #38b6ff;
+        width: fit-content;
+    }
+
+#DataPagerGames {
+    background-color: #38b6ff;
+    padding: 7px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+}
+
+    #DataPagerGames a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+
+        #DataPagerGames a:hover {
+            color: white;
+            font-weight: bold;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+/*@media (min-width: 992px) {
+    .alto-100 {
+        height: 100vh;
+    }
+}*/
