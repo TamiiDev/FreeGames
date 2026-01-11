@@ -8,7 +8,15 @@
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link href="../css/styles.css" rel="stylesheet" type="text/css" />
-
+    <style>
+        #DataPagerGames span {
+            color: white !important;
+            font-weight: bold !important;
+            background-color: #007acc !important;
+            padding: 3px 7px !important;
+            border-radius: 4px !important;
+        }
+    </style>
 </head>
 <body>
     <form class="bg-black" id="freegames" runat="server">
@@ -88,18 +96,18 @@
         </main>
 
         <div class="container text-center d-flex justify-content-center mt-3">
-            <asp:DataPager ID="DataPagerGames" runat="server" PagedControlID="lvGames" PageSize="12"  style="font-size: 20px; width: 100%; font-weight:bold;">
+            <asp:DataPager ID="DataPagerGames" runat="server" PagedControlID="lvGames" PageSize="12" ClientIDMode="Static" style="font-size: 20px; width: 100%; font-weight:bold;">
                 <Fields>
-                    <asp:NextPreviousPagerField ShowFirstPageButton="True" ShowNextPageButton="False" />
+                    <asp:NextPreviousPagerField ShowFirstPageButton="True" ShowNextPageButton="False" FirstPageText="First" LastPageText="Last" NextPageText="Next" PreviousPageText="Previous" />
                     <asp:NumericPagerField />
-                    <asp:NextPreviousPagerField ShowLastPageButton="True" ShowPreviousPageButton="False" />
+                    <asp:NextPreviousPagerField ShowLastPageButton="True" ShowPreviousPageButton="False" FirstPageText="First" LastPageText="Last" NextPageText="Next" PreviousPageText="Previous" />
                 </Fields>
             </asp:DataPager>
         </div>
 
 
         <footer class="fw-bold text-center py-3 mt-3" style="background-color: #38b6ff;">
-            <p class="mb-0 fs-5">&copy; 2024 Tamara - Todos los derechos reservados</p>
+            <p class="mb-0 fs-5">&copy; 2024 Tamara - All rights reserved</p>
         </footer>
 
     </form>
